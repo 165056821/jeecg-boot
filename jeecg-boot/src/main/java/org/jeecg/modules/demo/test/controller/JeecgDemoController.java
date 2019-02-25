@@ -56,6 +56,11 @@ public class JeecgDemoController {
 	@Autowired
 	private RedisUtil redisUtil;
 
+	@GetMapping("/helloworld")
+	public String helloWorld()
+	{
+		return "helloworld";
+	}
 	/**
 	 * 分页列表查询
 	 * 
